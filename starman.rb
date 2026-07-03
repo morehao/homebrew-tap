@@ -5,41 +5,41 @@
 class Starman < Formula
   desc "CLI tool for managing GitHub starred repositories with AI — sync, analyze, categorize, search, and generate awesome lists"
   homepage "https://github.com/morehao/starman"
-  version "0.0.16"
+  version "0.0.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/morehao/starman/releases/download/v0.0.16/starman_0.0.16_darwin_amd64"
-      sha256 "92fceb16956b18b97c8eb9369532613d5b0afedbbfd4dcd683b22efc22bdb1e0"
+      url "https://github.com/morehao/starman/releases/download/v0.0.17/starman_0.0.17_darwin_amd64"
+      sha256 "7bfd1d069d3fa4a87ee8a86e54a80330b8d9b7b68075478b0dc62af35abcdd86"
 
       define_method(:install) do
-        bin.install "starman_0.0.16_darwin_amd64" => "starman"
+        bin.install "starman_0.0.17_darwin_amd64" => "starman"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/morehao/starman/releases/download/v0.0.16/starman_0.0.16_darwin_arm64"
-      sha256 "b39056c9514efbcd50702a892dbe3c873047bdfa848b0d4c4dc117e36525dec0"
+      url "https://github.com/morehao/starman/releases/download/v0.0.17/starman_0.0.17_darwin_arm64"
+      sha256 "1060a399540d948ab89163e116fb413ab0b17e2adf32ef37a3ba85fd6aa71e27"
 
       define_method(:install) do
-        bin.install "starman_0.0.16_darwin_arm64" => "starman"
+        bin.install "starman_0.0.17_darwin_arm64" => "starman"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/morehao/starman/releases/download/v0.0.16/starman_0.0.16_linux_amd64"
-      sha256 "5306afd071485ab56bbf55d79ef306003c8973eec95b19a8c875da72eec01365"
+      url "https://github.com/morehao/starman/releases/download/v0.0.17/starman_0.0.17_linux_amd64"
+      sha256 "16088bdb4e91b6b9cc35c6a1bdb0da0c8d6ee2d10ecb168758aae0fd1a69f72a"
       define_method(:install) do
-        bin.install "starman_0.0.16_linux_amd64" => "starman"
+        bin.install "starman_0.0.17_linux_amd64" => "starman"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/morehao/starman/releases/download/v0.0.16/starman_0.0.16_linux_arm64"
-      sha256 "b21162807cdffc709199cf1fc43ca1adb4c213bc5512edcd6c75fb29cc4f5ddf"
+      url "https://github.com/morehao/starman/releases/download/v0.0.17/starman_0.0.17_linux_arm64"
+      sha256 "7a458c272e1f8406a20de0b0df5e161c61dbd8fd5db9dc75dae43dc021d4e587"
       define_method(:install) do
-        bin.install "starman_0.0.16_linux_arm64" => "starman"
+        bin.install "starman_0.0.17_linux_arm64" => "starman"
       end
     end
   end
